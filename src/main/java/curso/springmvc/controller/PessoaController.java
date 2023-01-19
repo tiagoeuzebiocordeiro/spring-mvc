@@ -58,7 +58,7 @@ public class PessoaController {
 	}
 	
 	
-	@GetMapping("/excluirpessoa/{idpessoa}")
+	@GetMapping("/excluirpessoa/{idpessoaSS}")
 	public ModelAndView excluir(@PathVariable("idpessoa") Long idpessoa) {
 		
 		pessoaRepository.deleteById(idpessoa);
